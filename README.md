@@ -12,7 +12,7 @@
 
 ## Download for Windows
 
-**[Latest Windows release](https://github.com/vighnesh11/SentinelOpsInspector-Releases/releases/latest)**
+**[Download SentinelOps Inspector for Windows](https://github.com/vighnesh11/SentinelOpsInspector-Releases/releases)**
 
 Go to the release's **Assets** section and download `SentinelOpsInspector.exe`. Save it to your Windows PC, then run it.
 
@@ -24,6 +24,12 @@ Go to the release's **Assets** section and download `SentinelOpsInspector.exe`. 
 - Internet access to the Microsoft Entra ID sign-in endpoints and Azure Monitor Logs API.
 - Access to an Azure Log Analytics workspace.
 - A suitable Microsoft Entra ID public-client app registration with **Log Analytics API** delegated **Data.Read**, and a user account with appropriate workspace read permissions.
+
+### Azure and Microsoft Entra ID integration guide
+
+**[Step-by-step integration guide: App registration, delegated Data.Read, user assignment, and workspace RBAC](INTEGRATION_GUIDE.md)**
+
+Before signing in, follow the guide to configure a desktop public-client app registration, assign the designated Entra user to the enterprise application when assignment is required, and grant that same user **Log Analytics Reader** on the target workspace resource. Record the **Tenant ID**, **Client ID**, and **Workspace ID**. **No client secret is needed.**
 
 ### First-time configuration
 
